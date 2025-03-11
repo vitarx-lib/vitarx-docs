@@ -32,8 +32,10 @@
     }
   },
   "include": [
-    "src",
-    "src/**/*.tsx"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/.visdoc/*.ts",
+    "src/.visdoc/**/*.tsx"
   ],
   "exclude": [
     "node_modules",

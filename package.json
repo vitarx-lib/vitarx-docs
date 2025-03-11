@@ -1,0 +1,24 @@
+{
+  "name": "vitarx-home",
+  "private": true,
+  "version": "0.0.0",
+  "description": "vitarx官网",
+  "author": "ZhuChongLin <8210856@qq.com>",
+  "type": "module",
+  "scripts": {
+    "dev": "visdoc dev",
+    "dev:clean": "visdoc dev --clean-cache",
+    "build": "visdoc build",
+    "preview": "visdoc preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@visdoc/vitarx-bundler": "^1.0.0-beta.1",
+    "prettier": "^3.3.3",
+    "sass-embedded": "^1.85.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@visdoc/default-theme-vitarx": "^1.0.0-beta.1"
+  }
+}

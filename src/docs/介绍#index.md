@@ -38,4 +38,4 @@ Vitarx 不仅是一个前端框架，更是一种开发理念的革新，旨在�
 
 ## 版权信息
 
-本项目采用 [MIT](https://opensource.org/licenses/MIT) 开源协议，您可以在 [LICENSE](https://github.com/vitarx-lib/core/LICENSE) 文件中查看完整的授权条款。
+本项目采用 [MIT](https://opensource.org/licenses/MIT) 开源协议，您可以在 [LICENSE](https://github.com/vitarx-lib/core/blob/main/LICENSE) 文件中查看完整的授权条款。

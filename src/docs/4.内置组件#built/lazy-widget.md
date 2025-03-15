@@ -25,9 +25,10 @@ export default function App() {
 
 ## 配置选项
 
-- `injectProps`：需要注入给懒加载组件的props
-- `loading`：加载中要显示的组件
-- `onError`：接管错误，可以返回一个新的虚拟节点供渲染
+- `children`：懒加载的组件模块
+- `injectProps`?：需要注入给懒加载组件的props
+- `loading`?：加载中要显示的组件
+- `onError`?：接管错误，可以返回一个新的虚拟节点供渲染
 
 ## 最佳实践
 

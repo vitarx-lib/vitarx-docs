@@ -32,46 +32,46 @@ export default function App() {
 
 ## 最佳实践
 
-1. **大型组件懒加载**：
+### **大型组件懒加载**
 
-```tsx
-import { LazyWidget } from 'vitarx'
+  ```tsx
+  import { LazyWidget } from 'vitarx'
 
-export default function App() {
-  return (
-    <div>
-      <LazyWidget loading={<div>加载中...</div>} onError={() => <div>加载失败</div>}>
-        {/* 假设Home组件非常大 */}
-        {() => import('./Home')}
-      </LazyWidget>
-    </div>
-  )
-}
-```
+  export default function App() {
+    return (
+      <div>
+        <LazyWidget loading={<div>加载中...</div>} onError={() => <div>加载失败</div>}>
+          {/* 假设Home组件非常大 */}
+          {() => import('./Home')}
+        </LazyWidget>
+      </div>
+    )
+  }
+  ```
 
-2. **与 Suspense 配合使用**：
+### **与 Suspense 配合使用**
 
-```tsx
-import { Suspense, lazy } from 'vitarx'
+  ```tsx
+  import { Suspense, lazy } from 'vitarx'
 
-// 注意：lazy 并不是 LazyWidget 组件，lazy是一个用于强制转换类型的函数，它可以让tsx识别懒加载组件
-// 实际上 Vitarx 支持将 () => import('./Chart') 做为节点type，但tsx类型校验会失败，所以需要使用lazy进行强制转换
-const Chart = lazy(() => import('./Chart'))
+  // 注意：lazy 并不是 LazyWidget 组件，lazy是一个用于强制转换类型的函数，它可以让tsx识别懒加载组件
+  // 实际上 Vitarx 支持将 () => import('./Chart') 做为节点type，但tsx类型校验会失败，所以需要使用lazy进行强制转换
+  const Chart = lazy(() => import('./Chart'))
 
-export default function Dashboard() {
-  return (
-    <div>
-      {/* 在组件加载完成之前会展示fallback */}
-      <Suspense fallback={<div>加载图表中...</div>}>
+  export default function Dashboard() {
+    return (
+      <div>
+        {/* 在组件加载完成之前会展示fallback */}
+        <Suspense fallback={<div>加载图表中...</div>}>
+          <Chart />
+        </Suspense>
+        {/* 直接渲染，不呈现loading态 */}
         <Chart />
-      </Suspense>
-      {/* 直接渲染，不呈现loading态 */}
-      <Chart />
-    </div>
-  )
-}
-```
+      </div>
+    )
+  }
+  ```
 
-4. **优化建议**：
+### **优化建议**
 - 对大型组件进行代码分割
 - 预加载关键路径上的组件

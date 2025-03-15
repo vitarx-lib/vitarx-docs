@@ -28,7 +28,7 @@ export default function App() {
 
 ## 最佳实践
 
-1. **模态框实现**：
+### **模态框实现**
 
   ```tsx
   import { Teleport,build } from 'vitarx'
@@ -50,7 +50,7 @@ export default function App() {
   }
   ```
 
-2. **条件传送**：
+### **条件传送**
 
   ```tsx
   import { Teleport } from 'vitarx'

@@ -30,7 +30,9 @@ export default function App() {
 
 ## 最佳实践
 
-1. **多层嵌套**：在复杂应用中，可以使用多层 Suspense 来优化不同区域的加载体验：
+### **多层嵌套**
+
+在复杂应用中，可以使用多层 Suspense 来优化不同区域的加载体验：
 
 ```tsx
 import { Suspense } from 'vitarx'
@@ -51,7 +53,9 @@ export default function App() {
 }
 ```
 
-2. **错误边界处理**：合理利用 `onError` 属性来处理加载失败的情况：
+### **错误边界处理**
+
+合理利用 `onError` 属性来处理加载失败的情况：
 
 ```tsx
 import { Suspense } from 'vitarx'
@@ -78,4 +82,6 @@ export default function App() {
 }
 ```
 
-3. **性能优化**：避免在 Suspense 中包含过多的异步组件，可能会影响整体加载性能。建议将大型异步组件拆分成更小的部分，使用多个 Suspense 包裹。
+### **性能优化**
+
+避免在 Suspense 中包含过多的异步组件，可能会影响整体加载性能。建议将大型异步组件拆分成更小的部分，使用多个 Suspense 包裹。

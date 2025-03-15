@@ -27,7 +27,7 @@ export default function App() {
 
 ## 最佳实践
 
-1. **设置缓存组件白名单**：
+### **设置缓存组件白名单**
 
 ```tsx
 import { KeepAlive } from 'vitarx'
@@ -43,7 +43,7 @@ export default function App() {
 }
 ```
 
-2. **设置排除缓存的组件**：
+### **设置排除缓存的组件**
 
 ```jsx
 import { KeepAlive } from 'vitarx'
@@ -59,7 +59,7 @@ export default function App() {
 }
 ```
 
-3. **控制缓存数量**：
+### **控制缓存数量**
 
 ```tsx
 import { KeepAlive,type WidgetType } from 'vitarx'
@@ -77,7 +77,7 @@ export default function App() {
 }
 ```
 
-4. **使用唯一键区分相同类型的组件**：
+### **使用唯一键区分相同类型的组件**
 
 ```tsx
 import { KeepAlive } from 'vitarx'
@@ -97,7 +97,7 @@ export default function App() {
 }
 ```
 
-5. **性能优化建议**：
+### **性能优化建议**
 - 合理设置 `max` 值，避免缓存过多组件导致内存占用过高
 - 使用 `include` 和 `exclude` 精确控制需要缓存的组件
 - 避免在频繁更新的组件上使用 KeepAlive

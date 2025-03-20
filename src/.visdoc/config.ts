@@ -58,6 +58,6 @@ export default defineConfig({
         description: '虽无大厂背书，但作者会全力维护框架，后需会有基于此框架的低代码开发平台诞生。'
       }
     ],
-    footer: '<p style="text-align: center">遵循MIT开源协议<br>Copyright &copy; 朱冲林</p>'
+    footer: '<p style="text-align: center">遵循MIT开源协议<br>Copyright &copy; ZhuChongLin</p>'
   })
 })

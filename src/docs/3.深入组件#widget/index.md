@@ -9,14 +9,11 @@
 在本章中，我们将详细介绍以下内容：
 
 1. [Props](/docs/widget/props.html) - 深入了解组件参数的定义、传递和使用，包括默认值设置、类型检查以及内置特殊属性（如 `key`、`ref`、`v-bind`、`v-html` 等）。
-
 2. [Children](/docs/widget/children.html) - 探索如何接收和处理组件的子节点，类似于 Vue 中的插槽概念，但有其独特的实现方式。
-
 3. [依赖注入](/docs/widget/inject.html) - 学习如何使用依赖注入机制在组件树中传递数据，避免 props 逐级透传的问题。
-
 4. [异步组件](/docs/widget/async-widget.html) - 掌握异步组件的定义和使用方法，适用于需要异步加载数据或代码分割的场景。
-
 5. [简单组件](/docs/widget/simple.html) - 了解简单组件的概念和应用场景，这是一种专注于纯视图渲染、没有生命周期和状态管理的轻量级组件。
+6. [生命周期](/docs/widget/lifecycle.html) - 了解组件的生命周期钩子，了解组件在加载、更新和卸载过程中的状态变化。
 
 ## 组件设计理念
 

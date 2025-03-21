@@ -60,5 +60,10 @@ export default defineConfig({
     ],
     footer: '<p style="text-align: center">遵循MIT开源协议<br>Copyright &copy; ZhuChongLin</p>'
   }),
-  docDirs: ['docs', 'router']
+  docDirs: ['docs', 'router'],
+  markdownIt: {
+    shikiConfig: {
+      langs: ['apache', 'nginx']
+    }
+  }
 })

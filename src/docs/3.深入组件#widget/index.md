@@ -14,6 +14,7 @@
 4. [异步组件](/docs/widget/async-widget.html) - 掌握异步组件的定义和使用方法，适用于需要异步加载数据或代码分割的场景。
 5. [简单组件](/docs/widget/simple.html) - 了解简单组件的概念和应用场景，这是一种专注于纯视图渲染、没有生命周期和状态管理的轻量级组件。
 6. [生命周期](/docs/widget/lifecycle.html) - 了解组件的生命周期钩子，了解组件在加载、更新和卸载过程中的状态变化。
+7. [函数组件专享 API](/docs/widget/api.html) - 了解函数组件专享的 API
 
 ## 组件设计理念
 

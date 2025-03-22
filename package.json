@@ -13,12 +13,12 @@
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
-    "@visdoc/vitarx-bundler": "^1.0.0-beta.1",
+    "@visdoc/vitarx-bundler": "^1.0.0-beta.2",
     "prettier": "^3.3.3",
     "sass-embedded": "^1.85.1",
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@visdoc/default-theme-vitarx": "^1.0.0-beta.1"
+    "@visdoc/default-theme-vitarx": "^1.0.0-beta.2"
   }
 }

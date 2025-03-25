@@ -61,7 +61,7 @@ export default defineConfig({
     footer: `<p style="text-align: center">
   遵循MIT开源协议<br>
   Copyright &copy; ZhuChongLin<br>
-  <a class="all-unset" style="cursor: pointer" href="https://beian.miit.gov.cn/" target="_blank">黔ICP备2024032832号-2</a>
+  <a class="all-unset" style="cursor: pointer" href="https://beian.miit.gov.cn/" target="_blank">黔ICP备2024032832号</a>
 </p>`
   }),
   docDirs: ['docs', 'router'],

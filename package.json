@@ -1,24 +1,26 @@
 {
-  "name": "vitarx-home",
+  "name": "vitarx-docs",
   "private": true,
-  "version": "0.0.0",
-  "description": "vitarx官网",
   "author": "ZhuChongLin <8210856@qq.com>",
   "type": "module",
   "scripts": {
-    "dev": "visdoc dev",
-    "dev:clean": "visdoc dev --clean-cache",
-    "build": "visdoc build",
-    "preview": "visdoc preview"
+    "dev": "vita-site dev",
+    "dev:clean": "vita-site dev --force",
+    "build": "vita-site build",
+    "preview": "vita-site preview"
+  },
+  "dependencies": {
+    "@vita-site/theme-default": "1.0.0-alpha.1",
+    "vitarx": "^4.0.0",
+    "vitarx-router": "^4.0.2"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
-    "@visdoc/vitarx-bundler": "^1.0.0-beta.2",
-    "prettier": "^3.3.3",
-    "sass-embedded": "^1.85.1",
-    "typescript": "^5.7.2"
-  },
-  "dependencies": {
-    "@visdoc/default-theme-vitarx": "^1.0.0-beta.2"
+    "@vitarx/plugin-vite": "^1.0.0",
+    "prettier": "^3.8.3",
+    "sass-embedded": "1.70.0",
+    "typescript": "^6.0.3",
+    "vita-site": "1.0.0-alpha.0",
+    "vite": "^8.0.14"
   }
 }

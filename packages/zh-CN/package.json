@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vita-site dev",
     "dev:clean": "vita-site dev --force",
-    "build": "vita-site build",
+    "build": "rm -rf .vita-site/dist && vita-site build",
     "preview": "vita-site preview"
   }
 }

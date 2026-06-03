@@ -27,7 +27,7 @@
     "noFallthroughCasesInSwitch": true, // 为 switch 语句中的故障案例启用错误报告
     "forceConsistentCasingInFileNames": true, // 确保导入时的大小写正确
     "noPropertyAccessFromIndexSignature": true, // 从索引签名访问属性报告为错误
-
+    "types": ["node"],
     /* 别名路径配置 */
     "paths": {
       "@/*": ["./src/*"]

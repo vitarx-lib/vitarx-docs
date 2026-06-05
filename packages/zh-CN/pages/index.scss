@@ -37,7 +37,7 @@ $tablet-breakpoint: 992px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 24px 80px;
+  padding: 48px 24px 80px;
   overflow: hidden;
   min-height: calc(100dvh - var(--header-height));
 }

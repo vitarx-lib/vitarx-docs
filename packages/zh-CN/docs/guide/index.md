@@ -1,6 +1,7 @@
 ---
 navOrder: -10
 ---
+
 # 介绍
 
 ## 什么是 Vitarx?
@@ -38,14 +39,14 @@ Vitarx 采用分层架构设计，各层职责清晰、依赖单向：
 └──────────────────────────┴──────────────────┘
 ```
 
-| 包名                                                                                           | 说明                                                                 |
-|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [`vitarx`](https://github.com/vitarx-lib/core/tree/main/packages/vitarx)                     | 聚合包，统一导出所有子包 API                                                   |
+| 包名                                                                                         | 说明                                                                         |
+| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [`vitarx`](https://github.com/vitarx-lib/core/tree/main/packages/vitarx)                     | 聚合包，统一导出所有子包 API                                                 |
 | [`@vitarx/responsive`](https://github.com/vitarx-lib/core/tree/main/packages/responsive)     | 响应式核心 — `ref`、`reactive`、`computed`、`watch`、`effect`、`effectScope` |
-| [`@vitarx/runtime-core`](https://github.com/vitarx-lib/core/tree/main/packages/runtime-core) | 运行时核心 — 组件系统、视图构建、生命周期、依赖注入、指令、内置组件                                |
-| [`@vitarx/runtime-dom`](https://github.com/vitarx-lib/core/tree/main/packages/runtime-dom)   | 浏览器渲染 — DOM 渲染器、`Transition`、`Teleport`、`Head`、内置指令                |
-| [`@vitarx/runtime-ssr`](https://github.com/vitarx-lib/core/tree/main/packages/runtime-ssr)   | 服务端渲染 — `renderToString`、`renderToStream`、客户端水合                    |
-| [`@vitarx/utils`](https://github.com/vitarx-lib/core/tree/main/packages/utils)               | 工具函数 — 深拷贝、类型检测、日志、防抖/节流                                           |
+| [`@vitarx/runtime-core`](https://github.com/vitarx-lib/core/tree/main/packages/runtime-core) | 运行时核心 — 组件系统、视图构建、生命周期、依赖注入、指令、内置组件          |
+| [`@vitarx/runtime-dom`](https://github.com/vitarx-lib/core/tree/main/packages/runtime-dom)   | 浏览器渲染 — DOM 渲染器、`Transition`、`Teleport`、`Head`、内置指令          |
+| [`@vitarx/runtime-ssr`](https://github.com/vitarx-lib/core/tree/main/packages/runtime-ssr)   | 服务端渲染 — `renderToString`、`renderToStream`、客户端水合                  |
+| [`@vitarx/utils`](https://github.com/vitarx-lib/core/tree/main/packages/utils)               | 工具函数 — 深拷贝、类型检测、日志、防抖/节流                                 |
 
 ## 与其他框架的区别
 
@@ -53,11 +54,11 @@ Vitarx 采用分层架构设计，各层职责清晰、依赖单向：
 
 传统虚拟 DOM 框架在状态更新时需要重新执行组件渲染函数生成新的虚拟 DOM 树，然后通过 diff 算法找出差异，最后批量更新 DOM。Vitarx 通过信号级的依赖追踪，在数据变化时直接定位到需要更新的 DOM 节点，跳过了 diff 比对的过程：
 
-| 维度      | 虚拟 DOM 框架     | Vitarx  |
-|---------|---------------|---------|
-| 更新机制    | 组件级重渲染 + diff | 信号级精确更新 |
-| 更新粒度    | 组件            | DOM 节点  |
-| diff 开销 | 有             | 无       |
+| 维度      | 虚拟 DOM 框架       | Vitarx         |
+| --------- | ------------------- | -------------- |
+| 更新机制  | 组件级重渲染 + diff | 信号级精确更新 |
+| 更新粒度  | 组件                | DOM 节点       |
+| diff 开销 | 有                  | 无             |
 
 ### 相比其他信号框架（Solid、Svelte）
 
@@ -81,6 +82,4 @@ Vitarx 同样采用‘信号’驱动的更新策略，但在 API 设计上更�
 
 ## 下一步
 
-- [快速开始](./quick-start.md) — 创建你的第一个 Vitarx 项目
-- [响应式基础](./reactivity.md) — 深入了解 `ref`、`reactive`、`computed`
-- [组件基础](./component.md) — 学习组件定义与生命周期
+- [快速开始](./1.getting-started/1.installation.md) — 创建你的第一个 Vitarx 项目

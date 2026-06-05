@@ -8,6 +8,8 @@ export default defineConfig({
       const title = to.meta['title']
       if (isString(title)) {
         document.title = `${title} - Vitarx`
+      } else {
+        document.title = 'Vitarx - 响应式前端框架'
       }
     })
   }

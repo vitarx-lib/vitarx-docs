@@ -27,7 +27,7 @@ const Hero = builder(() => {
       <div class="hero-content">
         <div class="hero-badge">
           <span class="dot"></span>
-          Next-Gen Frontend Framework
+          Typescript &amp; Javascript
         </div>
         <h1>
           融合 <span class="gradient-text">JSX</span> 与<br />

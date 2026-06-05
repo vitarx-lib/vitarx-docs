@@ -102,6 +102,13 @@ $tablet-breakpoint: 992px;
     }
   }
 }
+html[data-theme='dark'] {
+  .hero-badge {
+    background: rgba(108, 92, 231, 0.1);
+    border: 1px solid rgba(108, 92, 231, 0.2);
+    color: var(--color-primary);
+  }
+}
 .hero-badge {
   display: inline-flex;
   align-items: center;

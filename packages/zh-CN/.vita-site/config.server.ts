@@ -3,7 +3,7 @@ import { defineConfig } from 'vita-site/server'
 import { defineConfig as defineViteConfig } from 'vite'
 
 export default defineConfig({
-  title: 'Vitarx - 下一代前端框架',
+  title: 'Vitarx - 响应式前端框架',
   keywords:
     'Vitarx,JSX框架,响应式框架,Signal,信号驱动,前端框架,响应式系统,SSR,依赖追踪,精确更新,TypeScript,组件化',
   description:

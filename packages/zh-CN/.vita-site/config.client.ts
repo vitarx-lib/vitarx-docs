@@ -1,4 +1,4 @@
 import { defineConfig } from 'vita-site'
-import './assets/style.css'
+import './assets/style.scss'
 
 export default defineConfig({})

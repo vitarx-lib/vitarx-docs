@@ -21,7 +21,7 @@ export default defineConfig({
       title: 'Vitarx',
       color: '#6c5ce7',
       navLinks: [{ text: '指南', link: '/guide' }],
-      edit: 'https://github.com/vitarx-lib/vitarx-docs/edit/main/packages/zh-CN/docs/'
+      edit: 'https://github.com/vitarx-lib/vitarx-docs/edit/main/packages/zh-CN/'
     })
   ],
   vite: defineViteConfig({

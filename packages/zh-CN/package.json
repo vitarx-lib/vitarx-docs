@@ -7,6 +7,7 @@
     "dev": "vita-site dev",
     "dev:clean": "vita-site dev --force",
     "build": "rm -rf .vita-site/dist && vita-site build",
-    "preview": "vita-site preview"
+    "preview": "vita-site preview",
+    "clean": "vita-site clean"
   }
 }

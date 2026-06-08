@@ -14,11 +14,35 @@ const Hero = builder(() => {
   function copyInstall() {
     if (copy.value) return
     copy.value = true
-    navigator.clipboard.writeText('npm install vitarx').finally(() => {
+
+    const text = 'npm install vitarx'
+    const fallbackCopy = () => {
+      const textarea = document.createElement('textarea')
+      textarea.value = text
+      textarea.style.position = 'fixed'
+      textarea.style.left = '-9999px'
+      document.body.appendChild(textarea)
+      textarea.select()
+      try {
+        document.execCommand('copy')
+      } catch {
+      } finally {
+        document.body.removeChild(textarea)
+      }
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).catch(fallbackCopy).finally(() => {
+        setTimeout(() => {
+          copy.value = false
+        }, 2000)
+      })
+    } else {
+      fallbackCopy()
       setTimeout(() => {
         copy.value = false
       }, 2000)
-    })
+    }
   }
   return (
     <section class="hero">

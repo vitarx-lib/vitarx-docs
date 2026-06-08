@@ -38,7 +38,7 @@ const Hero = builder(() => {
           支持，让前端开发更高效、更优雅。
         </p>
         <div class="hero-actions">
-          <RouterLink to="/guide/" class="btn btn-primary">
+          <RouterLink to="/guide" class="btn btn-primary">
             <svg
               width="18"
               height="18"

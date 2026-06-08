@@ -6,7 +6,7 @@
   "dependencies": {
     "@vita-site/theme-default": "1.0.0",
     "vitarx": "^4.0.1",
-    "vitarx-router": "^4.0.4"
+    "vitarx-router": "^4.0.5"
   },
   "devDependencies": {
     "@zmaui/color": "^1.0.1",

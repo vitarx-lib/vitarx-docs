@@ -4,8 +4,8 @@
   "author": "ZhuChongLin <8210856@qq.com>",
   "type": "module",
   "dependencies": {
-    "@vita-site/theme-default": "1.0.0",
-    "vitarx": "^4.0.1",
+    "@vita-site/theme-default": "1.0.1",
+    "vitarx": "^4.0.2",
     "vitarx-router": "^4.0.5"
   },
   "devDependencies": {

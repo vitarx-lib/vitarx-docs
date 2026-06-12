@@ -32,11 +32,14 @@ const Hero = builder(() => {
     }
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).catch(fallbackCopy).finally(() => {
-        setTimeout(() => {
-          copy.value = false
-        }, 2000)
-      })
+      navigator.clipboard
+        .writeText(text)
+        .catch(fallbackCopy)
+        .finally(() => {
+          setTimeout(() => {
+            copy.value = false
+          }, 2000)
+        })
     } else {
       fallbackCopy()
       setTimeout(() => {
@@ -193,8 +196,8 @@ const Features = builder(() => {
         <p class="section-desc">每一个特性都经过精心设计，让开发体验和运行性能达到最佳平衡。</p>
       </div>
       <div class="features-grid">
-        {features.map((feature, index) => (
-          <div key={index} class="feature-card fade-in">
+        {features.map((feature) => (
+          <div class="feature-card fade-in">
             <div class="feature-icon">{feature.icon}</div>
             <h3>{feature.title}</h3>
             <p>{feature.description}</p>
@@ -349,7 +352,7 @@ export default function Home() {
                 更新日志
               </a>
               <a href="https://beian.miit.gov.cn/" target="_blank" class="footer-beian">
-                黔ICP备2024032832号-2
+                黔ICP备2024032832号
               </a>
             </div>
           </div>

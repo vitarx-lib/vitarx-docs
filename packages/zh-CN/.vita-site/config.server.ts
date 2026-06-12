@@ -20,17 +20,25 @@ export default defineConfig({
     `<link rel="icon" href="/favicon.ico" />`
   ],
   pageDirs: [{ dir: 'pages' }],
-  docDirs: [{ dir: 'docs/guide', prefix: '/guide' }],
+  docDirs: [
+    { dir: 'docs/guide', prefix: '/guide' },
+    { dir: 'docs/api', prefix: '/api' },
+    { dir: 'docs/types', prefix: '/types' }
+  ],
   markdownIt: {
     shikiConfig: {
-      langs: ['json']
+      langs: ['json', 'nginx']
     }
   },
   plugins: [
     defaultTheme({
       title: 'Vitarx',
       color: '#6c5ce7',
-      navLinks: [{ text: '指南', link: '/guide' }],
+      navLinks: [
+        { text: '文档', link: '/guide' },
+        { text: 'API', link: '/api' },
+        { text: '类型', link: '/types' }
+      ],
       edit: 'https://github.com/vitarx-lib/vitarx-docs/edit/main/packages/zh-CN/'
     })
   ],

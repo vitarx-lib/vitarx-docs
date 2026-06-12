@@ -6,7 +6,6 @@
 
 - [组件属性](./1.props.md) — 声明与使用 props、默认值、属性验证与透传
 - [子节点与插槽](./2.children.md) — children 的使用、归一化子节点、具名插槽模式
-- [生命周期](./3.lifecycle.md) — 组件从创建到销毁的完整生命周期钩子
 - [依赖注入](./4.inject.md) — provide / inject 跨层级数据传递
 - [组件引用](./5.component-ref.md) — useRef 获取元素与组件实例、defineExpose 暴露内部成员
 - [双向绑定](./6.v-model.md) — useModel 实现属性的双向绑定

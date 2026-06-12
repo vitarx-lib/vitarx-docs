@@ -13,3 +13,4 @@
 - [监听器](./7.watching.md) — 使用 `watch` 和 `watchEffect` 监听数据变化
 - [条件渲染](./8.conditional.md) — 根据条件动态显示不同的内容
 - [列表渲染](./9.list-rendering.md) — 使用 `For` 组件渲染动态列表
+- [生命周期钩子](./10.lifecycle.md) — 了解组件从创建到销毁的生命周期

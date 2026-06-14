@@ -37,7 +37,11 @@ export default defineConfig({
       navLinks: [
         { text: '文档', link: '/guide' },
         { text: 'API', link: '/api' },
-        { text: '类型', link: '/types' }
+        { text: '类型', link: '/types' },
+        {
+          text: '生态',
+          children: [{ text: '路由器', link: 'https://router.vitarx.cn/', isExternal: true }]
+        }
       ],
       edit: 'https://github.com/vitarx-lib/vitarx-docs/edit/main/packages/zh-CN/'
     })

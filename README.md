@@ -271,7 +271,7 @@ npm run dev
 
 无论是构建复杂的业务系统，还是深入探索前端框架的底层原理，Vitarx 都能为你提供友好而强大的开发体验。
 
-### 资源链接
+## 资源链接
 
 - **Gitee**: [代码仓库](https://gitee.com/vitarx/core)
 - **GitHub**: [代码仓库](https://github.com/vitarx-lib/core)

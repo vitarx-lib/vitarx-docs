@@ -16,6 +16,8 @@
 - [app.use()](./1.app.md#appuse) — 安装插件
 - [app.config](./1.app.md#appconfig) — 应用配置
 - [app.version](./1.app.md#appversion) — 框架版本
+- [app.rootView](./1.app.md#approotview) — 根视图对象
+- [getApp()](./1.app.md#getapp) — 获取当前应用实例
 
 ## 生命周期钩子
 
@@ -81,6 +83,7 @@
 ### 调度
 
 - [nextTick()](./3.reactivity/5.scheduler.md#nexttick) — 下一次更新周期
+- [flushSync()](./3.reactivity/5.scheduler.md#flushsync) — 同步刷新队列
 
 ## 组件 API
 
@@ -123,6 +126,9 @@
 - [h()](./6.view.md#h) — 创建视图节点
 - [dynamic()](./6.view.md#dynamic) — 动态渲染
 - [mergeProps()](./6.view.md#mergeprops) — 合并属性
+- [render()](./6.view.md#render) — 命令式渲染视图/组件
+- [builder()](./6.view.md#builder) — 定义视图构建器
+- [expr() / accessor() / branch()](./6.view.md#编译辅助函数) — 编译辅助函数
 - [Fragment](./6.view.md#fragment) — 片段容器
 - [Dynamic](./6.view.md#dynamic-1) — 动态组件
 - [Comment](./6.view.md#comment) — 注释节点
@@ -142,3 +148,11 @@
 - [isSSR()](./8.ssr.md#isssr) — 判断 SSR 环境
 - [isHydrating()](./8.ssr.md#ishydrating) — 判断水合中
 - [useSSRContext()](./8.ssr.md#usessrcontext) — 获取 SSR 上下文
+
+## 自定义渲染器
+
+面向自定义平台宿主的高阶 API。
+
+- [setRenderer()](./9.renderer.md#setrenderer) — 设置全局渲染器
+- [getRenderer()](./9.renderer.md#getrenderer) — 获取全局渲染器
+- [ViewRenderer 接口](./9.renderer.md#viewrenderer-接口) — 平台渲染器接口

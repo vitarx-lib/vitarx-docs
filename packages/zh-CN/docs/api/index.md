@@ -56,6 +56,7 @@
 - [unref()](./3.reactivity/2.utilities.md#unref) — toValue 别名
 - [toRaw()](./3.reactivity/2.utilities.md#toraw) — 获取原始对象
 - [markRaw()](./3.reactivity/2.utilities.md#markraw) — 标记为原始
+- [syncList()](./3.reactivity/2.utilities.md#synclist) — 列表数据同步（4.1.0+）
 - [isRef()](./3.reactivity/2.utilities.md#isref) — 判断 ref
 - [isReactive()](./3.reactivity/2.utilities.md#isreactive) — 判断 reactive
 - [isReadonly()](./3.reactivity/2.utilities.md#isreadonly) — 判断 readonly
